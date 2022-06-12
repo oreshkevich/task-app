@@ -6,11 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vue</title>
   <link rel="stylesheet" href="theme.css" />
+  <style>
+    [v-cloak] {
+      display: none
+    }
+  </style>
 </head>
 
 <body>
 
-  <div class="container" id="app">
+  <div class="container" id="app" v-cloak>
     <div class="card">
       <h1 :style="{
         color: inputValue.length < 5 ? 'darkred' : 'darkblue',
